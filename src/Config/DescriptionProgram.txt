@@ -7,3 +7,8 @@ FizzBuzz:
 Program zamieniajacy dzielne 3,5 na Fizz,Buzz
 FizzBuzz[argue]:
 @MaxValue - maksymalna wartość
+
+NameGenerator:
+Wyświetla losowe imię i nazwisko z plików
+NameGenerator[argue]:
+@None

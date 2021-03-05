@@ -63,7 +63,7 @@ public class ProgramManager {
     {
         ArrayList<Program> programList = new ArrayList<>();
 
-        //!!! DO Wymiany
+        //TODO: Do zmiany
         String[] pathnames = new File("src/Source").list();
 
         for(String name : pathnames) {
@@ -101,7 +101,7 @@ public class ProgramManager {
         } else target = "@None";
 
         try {
-            //!!! Do Wymiany
+            //TODO: Do zmiany
             File file = new File("src/Config/DescriptionProgram.txt");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {
@@ -147,8 +147,10 @@ public class ProgramManager {
         System.out.println("--------------------");
 
         String args=null;
+        Boolean isArgueSet=false;
         if(!argue.equals("@None")) {
             args = CommandInput(programName);
+            isArgueSet=true;
         }
 
         try {
@@ -158,10 +160,12 @@ public class ProgramManager {
             } else {
                 c = Class.forName("Source." + programName);
             }
-            Method method = c.getMethod("run", String.class);
-            if(args==null) {
+            Method method;
+            if(!isArgueSet) {
+                method = c.getMethod("run");
                 method.invoke(null);
             } else {
+                method = c.getMethod("run", String.class);
                 method.invoke(null, args);
             }
         } catch(ClassNotFoundException e) {
@@ -187,7 +191,7 @@ class Program {
 
         if(type==ProgramType.FILE) {
             this.name = name.substring(0, name.length()-5);
-        }
+        } else this.name = name;
     }
 
     public String getName() {
