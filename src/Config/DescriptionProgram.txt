@@ -1,0 +1,9 @@
+CountWord:
+Zwraca liczbę słów z wysłanej ścieżki pliku
+CountWord[argue]:
+@Path - ścieżka do pliku np.: C:/plik.txt
+
+FizzBuzz:
+Program zamieniajacy dzielne 3,5 na Fizz,Buzz
+FizzBuzz[argue]:
+@MaxValue - maksymalna wartość
