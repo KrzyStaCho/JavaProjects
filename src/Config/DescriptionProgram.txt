@@ -12,3 +12,8 @@ NameGenerator:
 Wyświetla losowe imię i nazwisko z plików
 NameGenerator[argue]:
 @None
+
+HigherOrLower:
+Gra polegająca na odgadnięciu następnej karty, która się pojawi
+HigherOrLower[argue]:
+@None
