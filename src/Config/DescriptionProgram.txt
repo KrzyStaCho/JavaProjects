@@ -17,3 +17,8 @@ HigherOrLower:
 Gra polegająca na odgadnięciu następnej karty, która się pojawi
 HigherOrLower[argue]:
 @None
+
+TemperatureConverter:
+Konwertuje temperature pomiedzy jednostkami [F, R, C, K]
+TemperatureConverter[argue]:
+@Value @From['F', 'R', 'C', 'K'] @To['F', 'R', 'C', 'K']
