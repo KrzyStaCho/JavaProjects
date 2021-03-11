@@ -22,3 +22,8 @@ TemperatureConverter:
 Konwertuje temperature pomiedzy jednostkami [F, R, C, K]
 TemperatureConverter[argue]:
 @Value @From['F', 'R', 'C', 'K'] @To['F', 'R', 'C', 'K']
+
+EncryptorDescryptor:
+Zakodowuje plik podany, oraz odkodowuje
+EncryptorDescryptor[argue]:
+@PathFile @Mode['Encode', 'Decode']
