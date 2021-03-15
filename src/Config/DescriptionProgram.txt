@@ -27,3 +27,8 @@ EncryptorDescryptor:
 Zakodowuje plik podany, oraz odkodowuje
 EncryptorDescryptor[argue]:
 @PathFile @Mode['Encode', 'Decode']
+
+Hangman:
+Gra w wisielca, odgadujesz slowo, masz do 5 pomylek mozliwosc
+Hangman[argue]:
+@PathFile - Plik z frazami do gry, kazda fraza osobnej linijce
