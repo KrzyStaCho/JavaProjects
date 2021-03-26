@@ -32,3 +32,18 @@ Hangman:
 Gra w wisielca, odgadujesz slowo, masz do 5 pomylek mozliwosc
 Hangman[argue]:
 @PathFile - Plik z frazami do gry, kazda fraza osobnej linijce
+
+LoveCalculator:
+Po podaniu dwoch imion na ich podstawie podaje poziom zgodnosci szacowany
+LoveCalculator[argue]:
+@FirstName @SecondName
+
+PasswordGenerator:
+Generuje losowy ciąg znaków który może być akceptowany jako hasło
+PasswordGenerator[argue]:
+@Length - Długosc hasła
+
+CollatzConjecture:
+Wykonuje 'problem Collatza' na liczbie podanej, pokazując ilość kroków aż do pętli
+CollatzConjecture[argue]:
+@Number - Liczba dodatnia, całkowita;
