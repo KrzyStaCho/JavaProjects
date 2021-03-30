@@ -47,3 +47,8 @@ CollatzConjecture:
 Wykonuje 'problem Collatza' na liczbie podanej, pokazując ilość kroków aż do pętli
 CollatzConjecture[argue]:
 @Number - Liczba dodatnia, całkowita;
+
+ReverseString:
+Odwraca ciąg znaków podany
+ReverseString[argue]:
+@String
