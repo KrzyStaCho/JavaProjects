@@ -10,6 +10,7 @@ public class ReverseString {
 
         if(args.length!=1) {
             System.out.println("Niewłaściwa ilość argumentów");
+            return;
         }
 
         String string = args[0];

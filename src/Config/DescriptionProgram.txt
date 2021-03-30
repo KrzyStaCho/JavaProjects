@@ -52,3 +52,18 @@ ReverseString:
 Odwraca ciąg znaków podany
 ReverseString[argue]:
 @String
+
+CountVowels:
+Liczy samogłoski w pliku
+CountVowels[argue]:
+@PathFile
+
+BMICalculator:
+Oblicza BMI
+BMICalculator[argue]:
+@Weight(kg, int) @Height(cm, int)
+
+ImageDownloader:
+Pobiera plik do wskazanego miejsca
+ImageDownloader[argue]:
+@URL[.jpg] @PathFile[.jpg]
